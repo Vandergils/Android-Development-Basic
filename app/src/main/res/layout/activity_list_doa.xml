@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListDoaActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        />
+    <ImageView
+        android:layout_toRightOf="@id/tvJudulDoa"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/logo_doa"
+        />
+    <TextView
+        android:id="@+id/tvJudulDoa"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Do'a dan Dzikir APP"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="25dp"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/tvJudulDoa2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Pilihan Do'a dan Dzikir"
+        android:textSize="30sp"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#FE9C2A"
+        android:layout_below="@id/tvJudulDoa"
+        />
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cvSelengkapnya"
+       android:layout_width="140dp"
+       android:layout_height="30dp"
+       app:cardCornerRadius="20dp"
+       android:backgroundTint="#FFFFFF"
+       android:layout_toRightOf="@id/tvJudulDoa2"
+       android:layout_marginTop="340dp"
+       android:layout_marginStart="5dp"
+       android:elevation="20dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="selengkapnya"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="5dp"
+           android:textColor="#B1A7A7"
+           />
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/baseline_arrow_forward_24"
+           android:layout_marginStart="110dp"
+           android:layout_marginTop="3dp"
+           />
+   </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvJudulDoa2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:background="@drawable/img"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Hi There!"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="10"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="470dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSwitch"
+            app:icon="@drawable/baseline_keyboard_arrow_right_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SWITCH"
+            android:backgroundTint="#00897B"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShare"
+            app:icon="@drawable/ic_baseline_share_24"
+            android:text="Share"
+            android:backgroundTint="#00897B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

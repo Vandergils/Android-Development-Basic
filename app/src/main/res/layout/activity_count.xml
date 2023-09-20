@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/NumberOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CountActivity"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/ButtonPlus"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#388E3C"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="Plus"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/ButtonMin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D32F2F"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="Minus"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/ButtonReset"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#5C4C6A"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="Reset"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
+</LinearLayout>
